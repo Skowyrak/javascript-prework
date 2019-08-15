@@ -1,6 +1,4 @@
 #paperBtn, #rockBtn, #scissorsBtn {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
@@ -10,8 +8,7 @@
   text-decoration: none;
 }
 
-
-#paperBtn:hover, #rockBtn:hover, #scissorsBtn:hover{
+#paperBtn:hover, #rockBtn:hover, #scissorsBtn:hover {
   background: #95cdf0;
   text-decoration: none;
 }
@@ -27,6 +24,7 @@
 }
 
 .article {
-    border-left: 6px solid blue;
+  border-left: 6px solid blue;
   background-color: lightgrey;
 }
+/*# sourceMappingURL=style.css.map */
