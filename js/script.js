@@ -73,7 +73,6 @@ function resetGame() {
   score.innerHTML = playerScore + ":" + computerScore;
 }
 
-function endGame() {
-  playerScore === 10 || computerScore === 10;
-  resetGame();
-}
+//function endGame() {
+  //playerScore === 10 || computerScore === 10;
+  //resetGame();
