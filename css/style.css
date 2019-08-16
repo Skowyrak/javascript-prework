@@ -1,4 +1,4 @@
-#paperBtn, #rockBtn, #scissorsBtn {
+.button {
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-#paperBtn:hover, #rockBtn:hover, #scissorsBtn:hover {
+.button:hover {
   background: #95cdf0;
   text-decoration: none;
 }

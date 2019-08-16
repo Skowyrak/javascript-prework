@@ -1,11 +1,12 @@
 /* REFERENCJE DO HTML-A */
 
-const paperBtn = document.querySelector("#paperBtn");
-const rockBtn = document.querySelector("#rockBtn");
-const scissorsBtn = document.querySelector("#scissorsBtn");
+const paperBtn = document.getElementById("paperBtn");
+const rockBtn = document.getElementById("rockBtn");
+const scissorsBtn = document.getElementById("scissorsBtn");
 
 const win = document.querySelector("#win");
 const score = document.querySelector("#score");
+const resetBtn = document.getElementById("resetBtn");
 
 /* NASŁUCHIWACZE */
 
@@ -19,6 +20,9 @@ rockBtn.addEventListener("click", function() {
 
 scissorsBtn.addEventListener("click", function() {
   determinePlayerMove("nożyczki");
+});
+resetBtn.addEventListener("click", function() {
+  resetGame();
 });
 
 /* ZMIENNE GLOBALNE */
@@ -59,4 +63,17 @@ function checkWinner() {
     win.innerHTML = "Wygrał komputer";
     computerScore++;
   }
+}
+
+function resetGame() {
+  let playerScore = 0;
+  let playerChoice;
+  let computerScore = 0;
+  let computerChoice;
+  score.innerHTML = playerScore + ":" + computerScore;
+}
+
+function endGame() {
+  playerScore === 10 || computerScore === 10;
+  resetGame();
 }

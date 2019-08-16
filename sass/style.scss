@@ -1,4 +1,4 @@
-#paperBtn, #rockBtn, #scissorsBtn {
+.button{
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -11,7 +11,7 @@
 }
 
 
-#paperBtn:hover, #rockBtn:hover, #scissorsBtn:hover{
+.button:hover{
   background: #95cdf0;
   text-decoration: none;
 }
