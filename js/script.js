@@ -6,7 +6,7 @@ const scissorsBtn = document.getElementById("scissorsBtn");
 
 const win = document.querySelector("#win");
 const score = document.querySelector("#score");
-const resetBtn = document.getElementById("resetBtn");
+const resetBtn = document.getElementById("#resetBtn");
 
 /* NASŁUCHIWACZE */
 
