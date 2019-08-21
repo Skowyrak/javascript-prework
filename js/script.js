@@ -46,6 +46,7 @@ function determinePlayerMove(playerMove){
   playerChoice = playerMove;
   checkWinner();
   score.innerHTML = playerScore + ":" + computerScore;
+  endGame();
 }
 
 //wynik gry
@@ -66,13 +67,17 @@ function checkWinner() {
 }
 
 function resetGame() {
-  let playerScore = 0;
-  let playerChoice;
-  let computerScore = 0;
-  let computerChoice;
+   playerScore = 0;
+   playerChoice;
+   computerScore = 0;
+   computerChoice;
   score.innerHTML = playerScore + ":" + computerScore;
 }
 
-//function endGame() {
-  //playerScore === 10 || computerScore === 10;
-  //resetGame();
+function endGame() {
+  if(playerScore === 10 || computerScore === 10) {
+    if(playerScore === 10) alert('Wygrałeś!');
+    else alert('Przegrałeś!');
+    resetGame();
+  }
+}
